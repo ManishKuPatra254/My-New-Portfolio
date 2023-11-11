@@ -1,0 +1,153 @@
+.main_projects {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.main_projects h1 {
+    font-size: 58px;
+    color: white;
+    padding: 35px 15px;
+    font-family: var(--heading-font);
+}
+
+.sub_projects_se {
+    border: none;
+}
+
+.project_titles_s {
+    position: relative;
+    /* border: 1px solid wheat; */
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    padding: 50px 100px;
+    border-top: 1px solid rgb(201, 201, 201);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.project_titles_s:last-of-type {
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.project_titles_s:hover h2 {
+    transform: translateX(-20px);
+    color: darkgrey;
+}
+
+.project_titles_s p {
+    transition: all 0.4s;
+    font-weight: 800;
+    word-spacing: 1px;
+    font-family: var(--main-font);
+    color: white;
+}
+
+.project_titles_s:hover p {
+    transform: translateX(20px);
+
+}
+
+.project_titles_s:hover button {
+    transform: translateX(20px);
+}
+
+.project_titles_s h2 {
+    font-size: 55px;
+    margin: 0px;
+    font-family: var(--main-font);
+    color: white;
+    font-weight: 400;
+    transition: all 0.4s;
+}
+
+
+
+.pop_img_h_in {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    width: 450px;
+    height: 300px;
+    transform: translateX(-50%);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pop_img_h_in img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.techstack_us_here {
+    /* border: 1px solid red; */
+    padding: 5px 20px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: justify;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.btn1 {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+}
+
+.btn1 button {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-weight: 900;
+    border: none;
+    color: white;
+    background-color: transparent;
+    font-family: var(--main-font);
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: all 0.2s;
+}
+
+.btn1 button:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+    font-family: var(--main-font);
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 10px 15px;
+    transition: all 0.2s;
+}
+
+@media screen and (max-width : 1100px) {
+    .project_titles_s {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 10px;
+        transition: none;
+    }
+
+    .project_titles_s h2 {
+        text-align: center;
+        font-weight: 800;
+        font-size: 40px;
+        color: #689768;
+        pointer-events: none;
+    }
+
+    .techstack_us_here p {
+        text-align: center;
+        pointer-events: none;
+        padding: 5px 2px;
+    }
+
+    .pop_img_h_in {
+        display: none;
+    }
+}
