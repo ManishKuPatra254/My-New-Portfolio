@@ -2,7 +2,7 @@ import  { Fragment, useEffect, useRef } from 'react'
 import style from './Herosec.module.css';
 import heroSectionImage from '../Images/manish patra 1.png'
 import { useNavigate } from 'react-router-dom';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import NavigateNextOutlinedIcon from '@mui/icons-material/NavigateNextOutlined';
 import { motion, useAnimation } from 'framer-motion';
 import gsap from 'gsap';
 
@@ -79,7 +79,7 @@ export function Herosec() {
 
                             >I enjoy researching and developing new technologies, designing website with animations from different platforms. I believe that learning is a never-ending process,and I am very into new technologies which trends in web development.</motion.p>
                         </div>
-                        <button onClick={handleNaviToContact} className={style.btn1}>Get In Touch <ArrowForwardIosIcon /></button>
+                        <button onClick={handleNaviToContact} className={style.btn1}>Get In Touch <NavigateNextOutlinedIcon /></button>
                     </div>
                     <div className={style.hero_sec_img}>
                         <motion.img
