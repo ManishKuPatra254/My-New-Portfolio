@@ -126,7 +126,7 @@
         left: 0;
         bottom: 0;
         width: 100%;
-        background: rgb(0, 0, 0);
+        background: rgb(20, 20, 20);
         padding-top: 100px;
         transform: translateX(100%);
         will-change: transform;
@@ -142,7 +142,7 @@
     }
 
     .menu li {
-        color: white;
+        color: rgb(255, 255, 255);
         display: block;
         transform-origin: -20px 50%;
         font-weight: bold;
@@ -167,10 +167,6 @@
         background: rgb(255, 255, 255);
         padding: 10px;
     }
-
-    /* .ham_menu_cond button path {
-        fill: red;
-    } */
 
     .accouns_links {
         display: flex;
