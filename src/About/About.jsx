@@ -63,7 +63,8 @@ function About() {
                         <a href={resume} target='blank'><button>Download CV</button></a>
                     </div>
                     <div className={style.experience_detail_s}>
-                      <h3>bfbdgb</h3>
+                        <p>March 2023 - August 2023</p>
+                        <h4>Function Up</h4>
                     </div>
                 </div>
             </div>

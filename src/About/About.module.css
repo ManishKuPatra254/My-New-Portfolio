@@ -102,8 +102,11 @@
     cursor: pointer;
 }
 
-.experience_detail_s{
-     border: 1px solid floralwhite;
+.experience_detail_s {
+    border: 1px solid floralwhite;
+    display: flex;
+    align-items: center;
+    gap: 120px;
 }
 
 @media screen and (max-width:1100px) {
@@ -156,7 +159,7 @@
         font-size: 28px;
     }
 
-    .sub_experience_about button{
+    .sub_experience_about button {
         font-size: 15px;
     }
 
