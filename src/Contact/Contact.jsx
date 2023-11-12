@@ -151,7 +151,7 @@ function Contact() {
                                 </Grid>
 
                                 <Grid item xs={12}>
-                                    <Button sx={{ width: '50%' }} type="submit"
+                                    <Button sx={{ width: '100%', textTransform: 'unset' }} type="submit"
                                         value='Send' onClick={sendEmail}
                                         variant="contained">Submit</Button>
                                     <Toaster />

@@ -1,6 +1,5 @@
 .contact_form {
     width: 100%;
-    /* border: 1px solid red; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,21 +25,16 @@
 }
 
 .contact_form button {
-    margin: auto;
-    display: flex;
     padding: 14px 32px;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 18px;
-    word-spacing: 2px;
-    letter-spacing: 4px;
-    font-weight: 500;
-    line-height: 24px;
+    font-family: var(--main-font);
+    font-size: 22px;
+    font-weight: 900;
     cursor: pointer;
-    text-align: center;
     border: transparent;
     color: rgb(0, 0, 0);
     background-color: #ffffff;
-    border-radius: 3px;
+    border-radius: 50px;
+    border: 1px solid transparent;
     transition: .3s ease-in-out;
 }
 
