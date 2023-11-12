@@ -117,7 +117,7 @@
 
 .btn1 button:hover {
     color: rgb(0, 0, 0);
-    background-color: white;
+    background-color: #ffffff;
     font-family: var(--main-font);
     cursor: pointer;
     border-radius: 50px;

@@ -10,3 +10,155 @@
     padding: 35px 15px;
     font-family: var(--heading-font);
 }
+
+.sub_main_me_about_im {
+    padding: 32px 150px;
+}
+
+.sub_main_about {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    justify-content: space-between;
+    /* border: 1px solid salmon; */
+}
+
+.about_me_p {
+    /* border: 1px solid wheat; */
+    padding: 12px 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about_me_p p {
+    text-align: justify;
+    font-weight: 600;
+    color: #999b9f;
+}
+
+.about_me_im_g {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.about_me_im_g img {
+    width: 500px;
+    border-radius: 3px;
+}
+
+.contact_about_info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    padding: 10px 0px;
+}
+
+.contact_about_info label {
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.contact_about_info p {
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all .3s;
+}
+
+.contact_about_info p:hover {
+    color: red;
+    transition: all .3s;
+}
+
+.main_experience_about {
+    /* border: 1px solid floralwhite; */
+    padding: 32px 150px;
+}
+
+.sub_experience_about {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid floralwhite; */
+}
+
+.sub_experience_about h2 {
+    font-size: 35px;
+}
+
+.sub_experience_about button {
+    font-size: 16px;
+    background-color: #2b2b2b;
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: none;
+    font-family: var(--main-font);
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.experience_detail_s{
+     border: 1px solid floralwhite;
+}
+
+@media screen and (max-width:1100px) {
+
+    .main_about_p h1 {
+        font-size: 38px;
+        padding: 15px 15px;
+        font-family: var(--heading-font);
+    }
+
+    .sub_main_me_about_im {
+        padding: 10px 10px;
+        text-align: center;
+    }
+
+    .sub_main_about {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .about_me_p p {
+        text-align: justify;
+        font-weight: 600;
+    }
+
+    .about_me_im_g {
+        padding: 5px 5px;
+    }
+
+    .about_me_im_g img {
+        width: 100%;
+        border-radius: 3px;
+    }
+
+    .main_experience_about {
+        width: 100%;
+        padding: 20px 40px;
+        /* border: 1px solid rgb(255, 255, 255); */
+    }
+
+    .sub_experience_about {
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+    }
+
+    .sub_experience_about h2 {
+        display: flex;
+        align-items: center;
+        font-size: 28px;
+    }
+
+    .sub_experience_about button{
+        font-size: 15px;
+    }
+
+
+}

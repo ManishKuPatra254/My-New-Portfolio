@@ -30,14 +30,13 @@ function Skills() {
             h1Ref.current.appendChild(span);
 
             gsap.from(span, {
-                duration: 0.9,
+                duration: 4.9,
                 opacity: 0,
                 y: 20,
                 delay: index * 0.1,
             });
         });
     }, []);
-
 
     return (
         <Fragment>

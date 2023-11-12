@@ -1,4 +1,5 @@
-import React, { Fragment, useState, useEffect, useRef } from 'react'
+/* eslint-disable react-refresh/only-export-components */
+import { Fragment, useState, useEffect, useRef } from 'react'
 import transition from '../Transition'
 import styles from './Projects.module.css'
 import netflix from '../Images/netflix clone.png'
@@ -28,7 +29,7 @@ function Projects() {
             h1Ref.current.appendChild(span);
 
             gsap.from(span, {
-                duration: 2.9,
+                duration: 4.9,
                 opacity: 0,
                 y: 20,
                 delay: index * 0.1,
@@ -102,14 +103,14 @@ function Projects() {
                                     <p>{project.techstack}</p>
                                     <div className={styles.btn1}>
                                         <Link to={project.visit} target='blank'><button>Visit website <CallMadeIcon sx={{
-                                            color: 'white',
+                                            color: 'black',
                                             '@media screen and (max-width: 900px)': {
                                                 color: '#61677A'
                                             },
                                         }} /></button></Link>
 
                                         <Link to={project.source} target='blank'><button>Source code <CallMadeIcon sx={{
-                                            color: 'white',
+                                            color: 'black',
                                             '@media screen and (max-width: 900px)': {
                                                 color: '#61677A'
                                             },
