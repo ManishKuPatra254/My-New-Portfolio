@@ -103,14 +103,14 @@ function Projects() {
                                     <p>{project.techstack}</p>
                                     <div className={styles.btn1}>
                                         <Link to={project.visit} target='blank'><button>Visit website <CallMadeIcon sx={{
-                                            color: 'black',
+                                            color: 'white',
                                             '@media screen and (max-width: 900px)': {
                                                 color: '#61677A'
                                             },
                                         }} /></button></Link>
 
                                         <Link to={project.source} target='blank'><button>Source code <CallMadeIcon sx={{
-                                            color: 'black',
+                                            color: 'white',
                                             '@media screen and (max-width: 900px)': {
                                                 color: '#61677A'
                                             },

@@ -64,8 +64,6 @@
     transition: all 0.4s;
 }
 
-
-
 .pop_img_h_in {
     position: absolute;
     top: -50px;
@@ -116,8 +114,8 @@
 }
 
 .btn1 button:hover {
-    color: rgb(0, 0, 0);
-    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+    background-color: #2b2b2b;
     font-family: var(--main-font);
     cursor: pointer;
     border-radius: 50px;

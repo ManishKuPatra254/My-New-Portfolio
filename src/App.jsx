@@ -10,7 +10,7 @@ import Contact from './Contact/Contact';
 import { AnimatePresence } from 'framer-motion';
 
 function App() {
-  
+
   const location = useLocation();
 
   return (

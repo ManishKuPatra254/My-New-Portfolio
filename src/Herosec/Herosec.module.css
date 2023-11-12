@@ -55,6 +55,7 @@
 
 
 .btn1 {
+    position: relative;
     display: flex;
     padding: 14px 32px;
     font-size: 16px;
@@ -63,18 +64,40 @@
     line-height: 24px;
     cursor: pointer;
     text-align: center;
-    border: 1px solid white;
+    border: 1px solid transparent;
     color: rgb(0, 0, 0);
     background-color: #ffffff;
-    border-radius: 80px;
-    transition: .3s ease-in-out;
+    border-radius: 50px;
+    transition: all 2s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+}
+
+.btn1::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 47px;
+    border: 1px solid transparent;
+    height: 47px;
+    border-radius: 50px;
+    scale: 0;
+    z-index: -1;
+    background-color: #131313;
+    transition: all 1s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
 .btn1:hover {
-    transition: .3s ease-in-out;
-    color: rgb(255, 255, 255);
-    background-color: transparent;
+    color: #fff;
+    scale: 1;
+    transition: all 2s cubic-bezier(0.23, 1, 0.320, 1);
 }
+
+.btn1:hover::before {
+    scale: 10;
+    transition: all 2s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
 
 .hero_sec_img {
     display: flex;

@@ -25,26 +25,48 @@
 }
 
 .contact_form button {
-    padding: 14px 32px;
+    position: relative;
+    padding: 8px 10px;
     font-family: var(--main-font);
     font-size: 22px;
     font-weight: 900;
     cursor: pointer;
-    border: transparent;
     color: rgb(0, 0, 0);
     background-color: #ffffff;
     border-radius: 50px;
     border: 1px solid transparent;
-    transition: .3s ease-in-out;
+    transition: all 2s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+}
+
+.contact_form button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 47px;
+    border: 1px solid transparent;
+    height: 47px;
+    border-radius: 50px;
+    scale: 0;
+    z-index: -1;
+    background-color: #131313;
+    transition: all 1s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
 .contact_form button:hover {
     border: 1px solid white;
-    transition: .3s ease-in-out;
-    color: rgb(255, 255, 255);
-    background-color: #000000;
+    color: #fff;
+    scale: 1;
+    background-color: transparent;
+    transition: all 2s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
+.contact_form button:hover::before {
+    scale: 20;
+    transition: all 2s cubic-bezier(0.23, 1, 0.320, 1);
+
+}
 
 @media screen and (max-width:900px) {
     .contact_form {
