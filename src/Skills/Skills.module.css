@@ -34,7 +34,7 @@
 .primary_skills_imp::before {
     content: '';
     position: absolute;
-    background: linear-gradient(to right, transparent 0%, rgb(255, 127, 127) 100%);
+    background: linear-gradient(to right, transparent 0%, rgb(0, 0, 0) 100%);
     top: 0;
     right: 0;
     bottom: 0;
@@ -45,10 +45,9 @@
 }
 
 .primary_skills_imp:hover::before {
-    content: '100%';
     transition: width .6s ease-in-out;
     width: 100%;
-    background: linear-gradient(to left, transparent 0%, rgb(255, 127, 127) 100%);
+    background: linear-gradient(to left, transparent 0%, #561717 100%);
 }
 
 .primary_skills_imp:last-of-type {
