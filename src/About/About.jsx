@@ -64,7 +64,13 @@ function About() {
                     </div>
                     <div className={style.experience_detail_s}>
                         <p>March 2023 - August 2023</p>
-                        <h4>Function Up</h4>
+                        <div className={style.details_experience_s}>
+                            <h4>Function Up</h4>
+                            <p>Frontend Developer Trainee</p>
+                            <p>Completed an intensive front-end development internship
+                                program focused on modern web technologies.Acquired proficiency in HTML, CSS, JavaScript and frontend frameworks like ReactJS, Bootstrap, Material UI.
+                                Gained practical experience in building interactive web application through hands-on coding projects.</p>
+                        </div>
                     </div>
                 </div>
             </div>
