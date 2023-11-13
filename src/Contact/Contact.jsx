@@ -6,7 +6,6 @@ import transition from '../Transition'
 import { Button, TextField, ThemeProvider, createTheme, useTheme } from '@mui/material'
 import { Grid } from '@mui/material';
 import emailjs from '@emailjs/browser';
-import { toast, Toaster } from 'react-hot-toast';
 
 const customTheme = (outerTheme) =>
     createTheme({
@@ -56,7 +55,6 @@ function Contact() {
         const message = form.current.message.value.trim();
 
         if (!name || !email || !message) {
-            toast.error('Please fill the fields')
             return;
         }
         emailjs.sendForm('service_5iqmjnu', 'template_tbifx9k', form.current, '5NE2Fm8c_P7gvpl2c')
@@ -64,15 +62,11 @@ function Contact() {
                 console.log(result.text);
             }, (error) => {
                 console.log(error.text);
-                e.preventDefault();
-                toast.success('Successfully sent')
+                e.preventDefault(); 
             })
             .catch((error) => {
                 console.log(error.text);
-                toast.error('Please fill the fields')
             })
-
-
     }
 
     const labelStyles = {
@@ -154,7 +148,6 @@ function Contact() {
                                     <Button sx={{ width: '100%', textTransform: 'unset' }} type="submit"
                                         value='Send' onClick={sendEmail}
                                         variant="contained">Submit</Button>
-                                    <Toaster />
                                 </Grid>
 
                             </Grid>
