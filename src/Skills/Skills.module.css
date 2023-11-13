@@ -60,21 +60,13 @@
     font-size: 20px;
 }
 
-@media screen and (max-width : 1100px) {
+@media screen and (max-width : 900px) {
 
     .main_skills_add h1 {
         font-size: 38px;
         padding: 15px 15px;
         font-family: var(--heading-font);
     }
-
-    .p_main_skills {
-        padding: 1px 1px;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width : 900px) {
 
     .sub_main_skills {
         display: flex;
@@ -100,6 +92,4 @@
     .primary_skills_imp:last-of-type {
         border-bottom: none;
     }
-
-
 }
