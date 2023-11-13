@@ -1,6 +1,6 @@
 .card {
     /* border: 1px solid red; */
-    --bg-color: #B0A695;
+    --bg-color: #1b1b1b;
     background-color: var(--bg-color);
     padding: 0px 0px;
     width: 100%;
@@ -12,7 +12,7 @@
 }
 
 .loader {
-    color: rgb(30, 30, 30);
+    color: rgb(228, 228, 228);
     font-family: var(--main-font);
     font-weight: 900;
     font-size: 95px;
@@ -43,11 +43,11 @@
     z-index: 20;
 }
 
-.words span{
+.words span {
     display: flex;
     height: 100%;
     padding-left: 8px;
-    color: #3A4D39;
+    color: #739072;
     animation: spinner 4s infinite;
 }
 
@@ -93,7 +93,35 @@
     }
 }
 
+
 @media screen and (max-width : 1100px) {
+    .card {
+        width: 100%;
+    }
+
+    .loader {
+        font-size: 71px;
+        text-align: center;
+        height: 180px;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: center;
+    }
+
+    .words::after {
+        /* border: 1px solid rgb(0, 102, 255); */
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(var(--bg-color) 5%,
+                transparent 15%,
+                transparent 80%,
+                var(--bg-color) 80%);
+        z-index: 20;
+    }
+}
+
+@media screen and (max-width : 900px) {
     .card {
         width: 100%;
     }
