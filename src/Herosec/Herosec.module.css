@@ -169,4 +169,21 @@
         align-items: center;
         justify-content: center;
     }
+
+    .hero_sec_img  {
+        margin: auto;
+        width: 89%;
+        object-fit: cover;
+        height: 100%;
+        background-color: #2d2d29;
+        border-radius: 200px;
+    }
+
+    .hero_sec_img img {
+        margin: auto;
+        width: 89%;
+        object-fit: cover;
+        height: 70%;
+        border-radius: 200px;
+    }
 }
