@@ -3,17 +3,37 @@ import styles from './Loader.module.css'
 
 
 export function Loader() {
+
+    const wordsChange = [
+        {
+            mypart: 'my role'
+        },
+
+        {
+            mypart: 'my skills'
+        },
+        {
+            mypart: 'my projects'
+        },
+        {
+            mypart: 'about me'
+        },
+        {
+            mypart: 'contact me'
+        },
+
+    ]
     return (
         <Fragment>
             <div className={styles.card}>
                 <div className={styles.loader}>
-                    <p>loading</p>
+                    <p>Loading</p>
                     <div className={styles.words}>
-                        <span className={styles.word}>buttons</span>
-                        <span className={styles.word}>forms</span>
-                        <span className={styles.word}>switches</span>
-                        <span className={styles.word}>cards</span>
-                        <span className={styles.word}>buttons</span>
+                        {
+                            wordsChange.map((items, index) => (
+                                <span className="" key={index}>{items.mypart}</span>
+                            ))
+                        }
                     </div>
                 </div>
             </div>

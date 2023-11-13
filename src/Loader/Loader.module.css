@@ -1,32 +1,38 @@
 .card {
-    /* color used to softly clip top and bottom of the .words container */
-    --bg-color: #0d0d0d;
+    /* border: 1px solid red; */
+    --bg-color: #B0A695;
     background-color: var(--bg-color);
-    padding: 1rem 2rem;
-    border-radius: 1.25rem;
+    padding: 0px 0px;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .loader {
-    color: rgb(124, 124, 124);
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 25px;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
-    height: 40px;
-    padding: 10px 10px;
+    color: rgb(30, 30, 30);
+    font-family: var(--main-font);
+    font-weight: 900;
+    font-size: 95px;
+    height: 170px;
+    padding: 15px 15px;
     display: -webkit-box;
     display: -ms-flexbox;
+    /* border: 1px solid wheat; */
     display: flex;
-    border-radius: 8px;
 }
 
 .words {
     overflow: hidden;
     position: relative;
+    text-align: center;
+    /* border: 1px solid red; */
 }
 
 .words::after {
+    /* border: 1px solid rgb(0, 102, 255); */
     content: "";
     position: absolute;
     inset: 0;
@@ -37,15 +43,15 @@
     z-index: 20;
 }
 
-.word {
-    display: block;
+.words span{
+    display: flex;
     height: 100%;
-    padding-left: 6px;
-    color: #956afa;
-    animation: spin_4991 4s infinite;
+    padding-left: 8px;
+    color: #3A4D39;
+    animation: spinner 4s infinite;
 }
 
-@keyframes spin_4991 {
+@keyframes spinner {
     10% {
         -webkit-transform: translateY(-102%);
         transform: translateY(-102%);
@@ -84,5 +90,32 @@
     100% {
         -webkit-transform: translateY(-400%);
         transform: translateY(-400%);
+    }
+}
+
+@media screen and (max-width : 1100px) {
+    .card {
+        width: 100%;
+    }
+
+    .loader {
+        font-size: 31px;
+        text-align: center;
+        height: 120px;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: center;
+    }
+
+    .words::after {
+        /* border: 1px solid rgb(0, 102, 255); */
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(var(--bg-color) 5%,
+                transparent 15%,
+                transparent 80%,
+                var(--bg-color) 80%);
+        z-index: 20;
     }
 }
