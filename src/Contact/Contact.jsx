@@ -50,6 +50,7 @@ function Contact() {
     const form = useRef();
 
     function sendEmail(e) {
+        e.preventDefault();
         const name = form.current.user_name.value.trim();
         const email = form.current.user_email.value.trim();
         const message = form.current.message.value.trim();
@@ -60,13 +61,15 @@ function Contact() {
         emailjs.sendForm('service_5iqmjnu', 'template_tbifx9k', form.current, '5NE2Fm8c_P7gvpl2c')
             .then((result) => {
                 console.log(result.text);
+                form.current.reset();
             }, (error) => {
                 console.log(error.text);
-                e.preventDefault(); 
             })
             .catch((error) => {
                 console.log(error.text);
             })
+
+        e.preventDefault();
     }
 
     const labelStyles = {
