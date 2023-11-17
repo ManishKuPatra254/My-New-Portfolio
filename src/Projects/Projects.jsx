@@ -42,12 +42,12 @@ function Projects() {
     const projects = [
 
         {
-            title: "Netflix Clone",
-            src: netflix,
-            color: "#000000",
-            techstack: 'Jsx , Css , React Js , Google Firebase , Material UI',
-            visit: 'https://netflix-clone-254.vercel.app/',
-            source: 'https://github.com/ManishKuPatra254/Netflix-Clone',
+            title: "Kanban Board Clone",
+            src: kanban,
+            color: "#706D63",
+            techstack: 'Jsx , Css ,React Js , Material UI , Redux',
+            visit: 'https://kanban-board-zeta-sage.vercel.app/',
+            source: 'https://github.com/ManishKuPatra254/Kanban-Board-Project',
         },
 
         {
@@ -59,6 +59,15 @@ function Projects() {
             source: 'https://github.com/ManishKuPatra254/Gym-Website',
         },
 
+        {
+            title: "Netflix Clone",
+            src: netflix,
+            color: "#000000",
+            techstack: 'Jsx , Css , React Js , Google Firebase , Material UI',
+            visit: 'https://netflix-clone-254.vercel.app/',
+            source: 'https://github.com/ManishKuPatra254/Netflix-Clone',
+        },
+        
         {
             title: "Cust TS",
             src: custts,
@@ -77,14 +86,9 @@ function Projects() {
             source: 'https://github.com/ManishKuPatra254/Twitter-Clone',
         },
 
-        {
-            title: "Kanban Board Clone",
-            src: kanban,
-            color: "#706D63",
-            techstack: 'Jsx , Css ,React Js , Material UI , Redux',
-            visit: 'https://kanban-board-zeta-sage.vercel.app/',
-            source: 'https://github.com/ManishKuPatra254/Kanban-Board-Project',
-        }
+
+
+
     ]
 
     return (
