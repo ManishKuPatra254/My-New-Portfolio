@@ -2,23 +2,23 @@
   "routes": [
     {
       "src": "/",
-      "destination": "/"
+      "destination": "/*"
     },
     {
       "src": "/about",
-      "destination": "/"
+      "destination": "/*"
     },
     {
       "src": "/skills",
-      "destination": "/"
+      "destination": "/*"
     },
     {
       "src": "/projects",
-      "destination": "/"
+      "destination": "/*"
     },
     {
       "src": "/contact",
-      "destination": "/"
+      "destination": "/*"
     }
   ]
 }
