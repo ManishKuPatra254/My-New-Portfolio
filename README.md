@@ -9,7 +9,7 @@ I am dedicated to crafting elegant and efficient solutions that bring ideas to l
 ## Skills
 
 - Languages: HTML, CSS, JavaScript
-- Frontend:React.js, Material Ui, Bootstrap
+- Frontend:React Js, Material Ui, Bootstrap , Tailwind css , Next Js
 - Styling:Sass, Styled Components
 - Version Control: Git, GitHub
 - Tools: Webpack, Babel, npm, 
